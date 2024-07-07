@@ -27,22 +27,22 @@ Navigate into the project directory:
 ```bash
 cd bmi-calculator
 
-Install dependencies:
+2. Install dependencies:
 ```bash
 npm install
 
 
-Start the development server:
+3. Start the development server:
 ```bash
 npm start
 
-Open your browser and visit http://localhost:3000 to view the app.
+4. Open your browser and visit http://localhost:3000 to view the app.
 
 Usage 🖥️
-Enter your weight in pounds (lbs) and height in inches (in).
-Click the "Submit" button to calculate your BMI.
-The calculated BMI and corresponding message will be displayed.
-Use the "Reload" button to reset the form.
+1. Enter your weight in pounds (lbs) and height in inches (in).
+2. Click the "Submit" button to calculate your BMI.
+3. The calculated BMI and corresponding message will be displayed.
+4. Use the "Reload" button to reset the form.
 
 Contributing 🤝
 Contributions are welcome! Here's how you can contribute:
