@@ -1,0 +1,178 @@
+/* App.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* White text color */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(28, 27, 27, 1) 0%, rgba(54, 53, 53, 1) 100%); /* Radial gradient background */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.container {
+  position: relative; /* Position relative for containing absolute elements */
+  box-shadow: 0px 0px 12px #ccc;
+  border-radius: 8px;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  max-width: 400px; /* Limiting width for better readability */
+  width: 100%;
+}
+
+input {
+  width: calc(100% - 8px); /* Adjusting width to account for padding and margin */
+  font-size: 1.2rem;
+  padding: 15px 8px; /* Adjusting padding for better input field spacing */
+  margin: 8px 0;
+  border: 1px solid #ccc; /* Adding border for input fields */
+  border-radius: 8px;
+  outline: none; /* Removing default outline */
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  padding: 15px 0;
+  background-color: #0077ee;
+  color: #fff;
+  border: 1px solid #0077ee; /* Matching border color with background color for contrast */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Adding transition for smooth hover effect */
+}
+
+.btn:hover {
+  background-color: #0055a5; /* Darker background color on hover */
+}
+
+.btn-outline {
+  background-color: #fff;
+  color: #a6bcd9; /* Adjusting color for better readability */
+  border: 1px solid #a6bcd9; /* Matching border color with text color */
+}
+
+.btn-outline:hover {
+  background-color: #f0f0f0; /* Lighter background color on hover */
+}
+
+.center {
+  text-align: center;
+  margin: 24px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
+  height: 200px;
+}
+
+/* Star cursor animation */
+.star {
+  position: absolute;
+  width: 80px; /* Default size for larger stars */
+  height: 80px; /* Default size for larger stars */
+  fill: #ffcf42;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Disable pointer events so stars don't interfere with form inputs */
+}
+
+.twinkling {
+  animation: moveStarTwinkling 2s infinite;
+}
+
+.bright {
+  opacity: 1;
+  animation: moveStarBright 2s infinite;
+}
+
+/* Animation for spinning stars */
+@keyframes spinClockwise {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spinCounterClockwise {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+/* Additional styling for stars */
+.star-1 {
+  left: 20%;
+  top: 20%;
+  animation: spinClockwise 10s linear infinite, moveStarTwinkling 2s infinite;
+}
+
+.star-2 {
+  left: 50%;
+  top: 50%;
+  width: 60px; /* Smaller size for 2nd star */
+  height: 60px; /* Smaller size for 2nd star */
+  animation: moveStarBright 2s infinite;
+}
+
+.star-3 {
+  left: 80%;
+  top: 80%;
+  animation: spinCounterClockwise 10s linear infinite, moveStarTwinkling 2s infinite;
+}
+
+.star-4 {
+  left: 30%;
+  top: 70%;
+  width: 60px; /* Smaller size for 4th star */
+  height: 60px; /* Smaller size for 4th star */
+  animation: moveStarBright 2s infinite;
+}
+
+@keyframes moveStarTwinkling {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes moveStarBright {
+  0%, 100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
