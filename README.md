@@ -21,19 +21,19 @@ This project is a simple BMI (Body Mass Index) calculator built with React. It a
 1. Clone the repository:
 
 
-### git clone https://github.com/SanjaySharma9945/bmi-calculator.git
+### `git clone https://github.com/SanjaySharma9945/bmi-calculator.git`
 
 Navigate into the project directory:
 
-### cd bmi-calculator
+### `cd bmi-calculator`
 
 2. Install dependencies:
 
-### npm install
+### `npm install`
 
 
 3. Start the development server:
-### npm start
+### `npm start`
 
 4. Open your browser and visit http://localhost:3000 to view the app.
 
